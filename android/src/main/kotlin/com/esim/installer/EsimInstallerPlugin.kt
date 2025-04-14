@@ -12,6 +12,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
+@Keep
 class EsimInstallerPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     private lateinit var channel: MethodChannel
     private var context: Context? = null
