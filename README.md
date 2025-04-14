@@ -1,15 +1,20 @@
 # esim_installer
 
-A new Flutter plugin project.
+A Flutter plugin to install eSIM profiles on Android and open provisioning link on iOS.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- 📱 Install eSIM on Android using `activationCode`
+- 🍎 Open Apple provisioning URL on iOS using `carddata`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Usage
 
+```dart
+final result = await EsimInstaller.installEsim(code: 'LPA:your-activation-code');
+```
+
+Platform Support
+Android ✅
+iOS ✅
+
+MIT License
