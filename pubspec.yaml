@@ -1,5 +1,5 @@
 name: esim_installer
-description: "A new Flutter plugin project."
+description: "A Flutter plugin to install eSIM on Android and open provisioning URL on iOS for easy setup."
 version: 0.0.1
 homepage: https://github.com/CodeDanger/esim_installer
 
