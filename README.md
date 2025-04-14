@@ -14,7 +14,8 @@ final result = await EsimInstaller.installEsim(code: 'LPA:your-activation-code')
 ```
 
 Platform Support
+
+```
 Android ✅
 iOS ✅
-
-MIT License
+```
