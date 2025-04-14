@@ -1,4 +1,4 @@
-package com.example.esim_installer
+package com.esim.installer
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

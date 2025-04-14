@@ -1,4 +1,4 @@
-group = "com.example.esim_installer"
+group = "com.esim.installer"
 version = "1.0-SNAPSHOT"
 
 buildscript {
@@ -25,7 +25,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "com.example.esim_installer"
+    namespace = "com.esim.installer"
 
     compileSdk = 35
 
@@ -44,12 +44,17 @@ android {
     }
 
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
+        targetSdk = 35
     }
 
     dependencies {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.20"
+        implementation "androidx.appcompat:appcompat:1.6.1"
+        implementation "androidx.core:core-ktx:1.9.0"
+
     }
 
     testOptions {

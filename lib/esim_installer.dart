@@ -35,4 +35,14 @@ class EsimInstaller {
       return false;
     }
   }
+
+  static Future<String?> getPlatformVersion() async {
+    final String? version = await _channel.invokeMethod('getPlatformVersion');
+    return version;
+  }
+
+  static Future<bool> isEsimSupported() async {
+    final bool? isSupported = await _channel.invokeMethod('isEsimSupported');
+    return isSupported ?? false;
+  }
 }
