@@ -1,3 +1,10 @@
+## 0.0.4
+
+- Added eSIM installation support for both Android and iOS
+- Added platform version checking
+- Added eSIM capability detection
+- Improved error handling
+
 ## 0.0.3+1
 
 - Added eSIM installation support for both Android and iOS
