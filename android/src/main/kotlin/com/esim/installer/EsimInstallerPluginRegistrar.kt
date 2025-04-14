@@ -2,6 +2,7 @@ package com.esim.installer
 
 import androidx.annotation.Keep
 import io.flutter.embedding.engine.plugins.FlutterPlugin
+import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry
 
 @Keep

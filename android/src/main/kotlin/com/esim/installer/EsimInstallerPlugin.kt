@@ -3,6 +3,7 @@ package com.esim.installer
 import android.app.Activity
 import android.content.Context
 import android.telephony.euicc.EuiccManager
+import androidx.annotation.Keep
 import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware

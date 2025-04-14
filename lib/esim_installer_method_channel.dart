@@ -7,11 +7,13 @@ import 'esim_installer_platform_interface.dart';
 class MethodChannelEsimInstaller extends EsimInstallerPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('esim_installer');
+  final methodChannel = const MethodChannel('com.esim.installer/channel');
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version = await methodChannel.invokeMethod<String>(
+      'getPlatformVersion',
+    );
     return version;
   }
 }

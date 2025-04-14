@@ -7,7 +7,6 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockEsimInstallerPlatform
     with MockPlatformInterfaceMixin
     implements EsimInstallerPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
@@ -20,10 +19,10 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    EsimInstaller esimInstallerPlugin = EsimInstaller();
+    // EsimInstaller esimInstallerPlugin = EsimInstaller();
     MockEsimInstallerPlatform fakePlatform = MockEsimInstallerPlatform();
     EsimInstallerPlatform.instance = fakePlatform;
 
-    expect(await esimInstallerPlugin.getPlatformVersion(), '42');
+    expect(await EsimInstaller.getPlatformVersion(), '42');
   });
 }

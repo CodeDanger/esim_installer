@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
                 code:
                     'LPA:1\$123456789012345678901234567890', // مثال لكود تنشيط
               );
-              print(result ? 'تم التثبيت' : 'فشل التثبيت');
+              debugPrint(result ? 'تم التثبيت' : 'فشل التثبيت');
             },
             child: const Text('تثبيت eSIM'),
           ),

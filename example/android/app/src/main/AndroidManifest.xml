@@ -2,6 +2,10 @@
     <uses-permission android:name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+    <meta-data
+    android:name="android.telephony.euicc.action.MANAGE_EMBEDDED_SUBSCRIPTIONS"
+    android:resource="@xml/euicc_download_manager_channel" />
 
     <application
         android:label="esim_installer_example"
